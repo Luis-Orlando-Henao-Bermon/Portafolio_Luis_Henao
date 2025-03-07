@@ -50,8 +50,8 @@
   }
 }
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 
 }
 /* Main styles */
@@ -81,15 +81,21 @@
   scroll-behavior:smooth;
 }
 header{
+  font-size: clamp(1rem,3vw,2rem);  
+  font-family: bebans;
   width: 100vw;
-  height: clamp(1.2rem,3vw,2rem);
+  height: clamp(1.2rem,3vw,2.5rem);
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   background-color: #fff;
   border-bottom: 2px solid #f2f2f2;
   z-index: 2;
   position: fixed;
+  padding: 0 1rem;
+}
+.nombreNav{
+  margin: 0rem;
 }
 .izquierda{
   width: 50%;
@@ -100,7 +106,7 @@ header a{
   font-family: bebans;
   color: #000;
   text-decoration: none;
-  font-size: clamp(1rem,3vw,1.5rem);
+  font-size: clamp(1rem,3vw,2rem);
 }
 .principal{
   height: 100vh;
@@ -114,7 +120,7 @@ header a{
   color: transparent; /* Hace que el texto no tenga relleno */
   -webkit-text-stroke: 1px black; /* Borde blanco de 2px */
   font-weight: 900;
-  font-size: clamp(5rem,9vw,8rem);
+  font-size: clamp(4rem,9vw,8rem);
   z-index: 1;
 }
 .saludo{
@@ -137,7 +143,8 @@ header a{
   padding: 1rem;
 }
 .proyectosText{
-  font-size: clamp(1.3rem,3vw,1.8rem);
+  font-size: clamp(1.5rem,3.5vw,3rem);
+  margin: 1rem 0;
   font-family: bebans;
 }
 
@@ -153,16 +160,20 @@ header a{
 }
 .card1{
   transition: 0.2s;
-  width: 35%;
-  padding:0 3rem;
+  width: 40%;
 }
 
-.card1:hover{
+.imgCard1:hover{
   padding: 0rem;
+  font-size: clamp(0.8rem,1.5vw,1.2rem);
+}
+
+.imgCard1{
+  padding:0 clamp(1rem,3vw,3rem);
 }
 .card1 img{
   width: 100%;
-  filter: drop-shadow(0px 0px 15px #5D3FD3); 
+  filter: drop-shadow(0px 0px 10px #5D3FD3); 
   transition: 0.2s;
 }
 .nombreProyecto {
@@ -172,6 +183,8 @@ header a{
 }
 .infoProyecto {
   line-height: 1;
+  width: 110%;
+  text-align:center;
 }
 #linksCards{
   color: transparent;
