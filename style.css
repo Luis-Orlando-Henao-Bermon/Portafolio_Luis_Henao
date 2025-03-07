@@ -80,11 +80,55 @@
   z-index: -1;
   scroll-behavior:smooth;
 }
+::-webkit-scrollbar {
+  z-index: 2  ;
+}
+#check {
+  display: none;
+}
+#check:checked ~ .menuHambur {
+  right: 0rem;
+}
+#check:checked ~ .top .menu {
+  z-index: 4;
+}
+.menuHambur a{
+  text-decoration: none;
+  color: #000;
+  font-family: bebans;
+  font-size: clamp(1.2rem,2vw,2rem);
+}
+.menuHambur {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  z-index: 3;
+  background-color: #fff  ;
+  right: -10rem;
+  transition: 0.1s;
+  width: 10rem;
+  border-left: 2px solid #f2f2f2;
+}
+.menuH{
+  z-index: 5;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  top: 0;
+  cursor: pointer;
+}
+.menu{
+  display: none;
+  cursor: pointer;
+}
+
 header{
-  font-size: clamp(1rem,3vw,2rem);  
+  font-size: clamp(1.8rem,3vw,2rem);  
   font-family: bebans;
   width: 100vw;
-  height: clamp(1.2rem,3vw,2.5rem);
+  height: clamp(2.5rem,3vw,2.5rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +150,7 @@ header a{
   font-family: bebans;
   color: #000;
   text-decoration: none;
-  font-size: clamp(1rem,3vw,2rem);
+  font-size: clamp(1.8rem,3vw,2rem);
 }
 .principal{
   height: 100vh;
@@ -144,7 +188,7 @@ header a{
 }
 .proyectosText{
   font-size: clamp(1.5rem,3.5vw,3rem);
-  margin: 1rem 0;
+  margin-bottom: 3rem;
   font-family: bebans;
 }
 
@@ -160,21 +204,26 @@ header a{
 }
 .card1{
   transition: 0.2s;
-  width: 40%;
+  width: clamp(20rem, 40vw, 48rem);
 }
 
-.imgCard1:hover{
+.card1 img:hover{
   padding: 0rem;
-  font-size: clamp(0.8rem,1.5vw,1.2rem);
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 30px #5D3FD3); 
+}
+a svg{
+  transition: 0.2s ease-in-out;
+}
+a svg:hover{
+  transform: scale(1.1);
 }
 
-.imgCard1{
-  padding:0 clamp(1rem,3vw,3rem);
-}
 .card1 img{
   width: 100%;
+  margin-right: -6%;
   filter: drop-shadow(0px 0px 10px #5D3FD3); 
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
 }
 .nombreProyecto {
   margin: 1rem 0;
@@ -183,9 +232,56 @@ header a{
 }
 .infoProyecto {
   line-height: 1;
-  width: 110%;
   text-align:center;
 }
 #linksCards{
   color: transparent;
+}
+.AcercaDeMi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  width: 100vw;
+}
+.AcercaDeMiText{
+  font-size: clamp(1.5rem,3.5vw,3rem);
+  margin: 3rem 0;
+  font-family: bebans;
+}
+.acercaDeMiCenter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.yo:hover{
+  transform: scale(1.1);
+}
+.yo{
+  width: clamp(15rem,20vw,20rem) ;
+  height: clamp(15rem,20vw,20rem);
+  border-radius: 50%; 
+  object-fit: cover;
+  transition: 0.2s;
+  filter: drop-shadow(0px 0px 10px #000000); 
+}
+.infoMe{
+  text-align: start;
+  width: 60%;
+  font-size: clamp(0.9rem,1.5vw,1.3rem);
+}
+@media only screen and (max-width:610px){
+  .infoMe{
+    width: 80%;
+  }
+}
+@media only screen and (max-width:580px){
+  .izquierda{
+    display: none;
+  }
+  .menu{
+    display: flex;
+  }
 }
