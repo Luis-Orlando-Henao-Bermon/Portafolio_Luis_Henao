@@ -86,12 +86,6 @@
 #check {
   display: none;
 }
-#check:checked ~ .menuHambur {
-  right: 0rem;
-}
-#check:checked ~ .top .menu {
-  z-index: 4;
-}
 .menuHambur a{
   text-decoration: none;
   color: #000;
@@ -114,7 +108,7 @@
 .menuH{
   z-index: 5;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   top: 2rem;
   top: 0;
   cursor: pointer;
@@ -204,7 +198,7 @@ header a{
 }
 .card1{
   transition: 0.2s;
-  width: clamp(20rem, 40vw, 48rem);
+  width: clamp(18rem, 40vw, 48rem);
 }
 
 .card1 img:hover{
@@ -283,5 +277,8 @@ a svg:hover{
   }
   .menu{
     display: flex;
+  }
+  .menuH{
+    right: 1rem;
   }
 }
