@@ -3,11 +3,11 @@
 
 @font-face {
   font-family: poppins;
-  src: url(./Fonts/Poppins-Regular.ttf);
+  src: url(/Fonts/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: bebans;
-  src: url(./Fonts/BebasNeue-Regular.ttf);
+  src: url(/Fonts/BebasNeue-Regular.ttf);
 }
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
