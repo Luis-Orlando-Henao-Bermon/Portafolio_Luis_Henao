@@ -268,8 +268,11 @@ a svg:hover{
 }
 footer{
   background-color: #fff;
-  padding: clamp(0.5rem,2vw,2rem) 0;
+  padding: clamp(0.5rem,2vw,1rem) 0;
   border-top: 2px solid #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer p{
   margin-top: 0.5rem;
