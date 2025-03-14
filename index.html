@@ -16,6 +16,16 @@
 
 <body>
   <div class="FondoPrincipal">
+    <div class="cambioIdioma">
+      <div class="iconIdiomaOculto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12.87 15.07l-2.54-2.51l.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35C8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5l3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7l1.62-4.33L19.12 17z"/></svg>
+      </div>
+      <div class="idiomasOculto">
+        <p class="espanol">Español</p>
+        <p class="ingles">Ingles</p>
+        <p class="Frances">Frances</p>
+      </div>
+    </div>
     
     <input type="checkbox" id="check">
     <div class="menuHambur" id="menuHambur">
@@ -35,7 +45,7 @@
         <a href="#principal" class="home">Inicio</a>
         <a href="#proyectos" class="proyectos">Proyectos</a>
         <a href="#AcercaDeMiText"class="sobreMi">Sobre mi</a>
-        <a href="#contacto"id="contactoL">Contacto</a>
+        <a href="#contacto"class="contacto">Contacto</a>
       </div>
       <label for="check" class="menu" id="menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24"><path fill="#000" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
@@ -66,7 +76,7 @@
         <div class="card1">
           <img src="./img/CpuPika.png" alt="">
           <p class="nombreProyecto">PokeApi</p>
-          <p class="infoProyecto">Es un programa que usa la PokeAPI. y con esto simula la pokedex y muestra los pokemones con su numero y nombre y puede pasar o retroceder de a uno en uno o lo puede buscar por el numero</p>
+          <p class="infoProyecto" id="PokeAPI">Es un programa que usa la PokeAPI. y con esto simula la pokedex y muestra los pokemones con su numero y nombre y puede pasar o retroceder de a uno en uno o lo puede buscar por el numero</p>
           <div id="linksCards">
 
             <a href="https://github.com/Luis-Orlando-Henao-Bermon/JavaScript_HenaoLuis/tree/main/Dia_9" class="GitHub" style="background-color: white;border-radius: 50%;  color: transparent;">
@@ -83,7 +93,7 @@
         <div class="card1">
           <img src="./img/CpuTibook.png" alt="">
           <p class="nombreProyecto">T!BOOK</p>
-          <p class="infoProyecto">Tibook es una plataforma diseñada para estudiantes que busca mejorar el acceso al aprendizaje a través de herramientas interactivas, contenido educativo y una comunidad colaborativa. Su objetivo es hacer que el estudio sea más dinámico y accesible para todos.</p>
+          <p class="infoProyecto" id="Tibook">Tibook es una plataforma diseñada para estudiantes que busca mejorar el acceso al aprendizaje a través de herramientas interactivas, contenido educativo y una comunidad colaborativa. Su objetivo es hacer que el estudio sea más dinámico y accesible para todos.</p>
           <div id="linksCards">
 
             <a href="https://github.com/StivenCarvajalCampus/Tibook/tree/merge" class="GitHub" style="background-color: white;border-radius: 50%;  color: transparent;">
@@ -100,7 +110,7 @@
         <div class="card1">
           <img src="./img/campus.png" alt="">
           <p class="nombreProyecto">Campuslans ERP</p>
-          <p class="infoProyecto">CampusLands ERP es una plataforma de simulacion diseñada en Python para gestionar el proceso académico de los estudiantes en CampusLands. Permite registrar y hacer seguimiento a los estudiantes, asignarlos a rutas de aprendizaje, evaluar su desempeño y generar reportes de progreso de manera eficiente​
+          <p class="infoProyecto" id="campus">CampusLands ERP es una plataforma de simulacion diseñada en Python para gestionar el proceso académico de los estudiantes en CampusLands. Permite registrar y hacer seguimiento a los estudiantes, asignarlos a rutas de aprendizaje, evaluar su desempeño y generar reportes de progreso de manera eficiente​
           </p>
           <div id="linksCards">
 
@@ -114,7 +124,7 @@
         <div class="card1">
           <img src="./img//superHeroe.png" alt="">
           <p class="nombreProyecto">SuperHero</p>
-          <p class="infoProyecto">Esta aplicación web permite consultar información detallada de superhéroes utilizando la SuperHero API. Al ingresar el ID de un superhéroe (entre 1 y 732), la aplicación muestra en tablas organizadas los datos completos del personaje: nombre e imagen, estadísticas de poder (inteligencia, fuerza, velocidad, resistencia, poder y combate), biografía, apariencia física, ocupación, base de operaciones y conexiones con otros personajes. La interfaz presenta toda esta información de manera estructurada y visual para facilitar la consulta.</p>
+          <p class="infoProyecto" id="superHero">Esta aplicación web permite consultar información detallada de superhéroes utilizando la SuperHero API. Al ingresar el ID de un superhéroe (entre 1 y 732), la aplicación muestra en tablas organizadas los datos completos del personaje: nombre e imagen, estadísticas de poder (inteligencia, fuerza, velocidad, resistencia, poder y combate), biografía, apariencia física, ocupación, base de operaciones y conexiones con otros personajes. La interfaz presenta toda esta información de manera estructurada y visual para facilitar la consulta.</p>
           <div id="linksCards">
 
             <a href="https://github.com/Luis-Orlando-Henao-Bermon/JavaScript_HenaoLuis/blob/main/Dia_7" class="GitHub" style="background-color: white;border-radius: 50%;  color: transparent;">
@@ -159,7 +169,7 @@
       </div>
       <div class="textFooter">
         <a href="mailto:roronoazoro3704@gmail.com" style="cursor: pointer; color: black;  font-size: clamp(0.8rem,2vw,1rem);">Roronoazoro3704@gmail.com</a>
-        <p style="font-size: clamp(0.7rem,2vw,1rem);">&copy; 2025 Luis Henao Campuslands. Todos los derechos reservados.</p> 
+        <p class="derechos" style="font-size: clamp(0.7rem,2vw,1rem);">&copy; 2025 Luis Henao Campuslands. Todos los derechos reservados.</p> 
       </div> 
     </footer>
 
@@ -168,24 +178,5 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-  document.getElementById("homeM").addEventListener("click", function() {
-      document.getElementById("menuHambur").style.right="-10rem";
-  });
-  document.getElementById("proyectosM").addEventListener("click", function() {
-      document.getElementById("menuHambur").style.right="-10rem";
-  });
-  document.getElementById("sobreMiM").addEventListener("click", function() {
-      document.getElementById("menuHambur").style.right="-10rem";
-  });
-  document.getElementById("contactoL").addEventListener("click", function() {
-      document.getElementById("menuHambur").style.right="-10rem";
-  });
-  document.getElementById("menuH").addEventListener("click", function() {
-      document.getElementById("menuHambur").style.right="-10rem";
-  });
-  document.getElementById("menu").addEventListener("click", function() {
-      document.getElementById("menuHambur").style.right="0rem";
-  });
-</script>
+<script src="/main.js"></script>
 </html>
