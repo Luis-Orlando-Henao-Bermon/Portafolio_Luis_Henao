@@ -16,7 +16,7 @@ document.getElementById("menuH").addEventListener("click", function() {
 document.getElementById("menu").addEventListener("click", function() {
     document.getElementById("menuHambur").style.right="0rem";
 });
-
+changeSpanish();
 
 function changeSpanish() {
     // Cambio de idioma
