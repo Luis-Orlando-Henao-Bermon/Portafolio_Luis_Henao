@@ -3,7 +3,7 @@
 :root {
   --color-text:#000;
   --color-back:#fff;
-  --color-sombra:#edebf8;
+  --color-sombra:#eeeeee;
 }
 @font-face {
   font-family: poppins;
@@ -56,6 +56,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  transition: 0.2s;
 
 }
 summary:hover{
@@ -110,10 +111,10 @@ summary{
   border-radius: 3px;
   border: 1px solid #575757;
   transition: 0.5s;
-  box-shadow: 3px 3px 0px #575757, 6px 6px 0px var(--color-text); /* Sombra doble */
+  box-shadow: 3px 3px 0px var(--color-text); /* Sombra doble */
 }
 
-body p,a{
+body p,a,label,h2{
   color: var(--color-text);
 }
 /* Main styles */
@@ -142,6 +143,7 @@ body p,a{
   overflow-x: hidden;
   z-index: -1;
   scroll-behavior:smooth;
+  
 }
 ::-webkit-scrollbar {
   z-index: 2  ;
@@ -356,6 +358,41 @@ footer p{
 footer a svg{
   width: clamp(2rem,3vw,3rem);
   height: clamp(2rem,3vw,3rem);
+}
+form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-back);
+  width: clamp(310px,50vw,800px);
+  margin: auto;
+  border: #575757 1px solid;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.formulario input,textarea{
+  width: 100%;
+  background-color: var(--color-back);
+  border: 1px solid #575757;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: var(--color-text);
+  outline: none;
+}
+.formulario{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#contactoH2{
+  color: var(--color-text);
+}
+#btn{
+  background-color: var(--color-sombra);
+  color: var(--color-text);
+  margin: 0.5rem 0;
 }
 @media only screen and (max-width:610px){
   .infoMe{
