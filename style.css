@@ -394,6 +394,14 @@ form{
   color: var(--color-text);
   margin: 0.5rem 0;
 }
+#descargaCv{
+  border: 1px solid #575757;
+  border-radius: 2rem;
+  padding: 0.4rem;
+  background-color: var(--color-text);
+  color: var(--color-back);
+}
+
 @media only screen and (max-width:610px){
   .infoMe{
     width: 80%;
