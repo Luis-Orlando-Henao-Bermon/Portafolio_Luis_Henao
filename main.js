@@ -84,6 +84,19 @@ function changeSpanish() {
     <br><br>
     🚀 Mi objetivo es seguir creciendo como programador, aportar valor en proyectos innovadores y colaborar en equipos dinámicos donde pueda mejorar mis habilidades y compartir mis conocimientos.`;
 
+    //contacto
+
+    document.getElementById("descargaCv").innerHTML="Descargar CV"
+    document.getElementById("nameLabel").innerHTML="Nombre"
+    document.getElementById("name").placeholder="Nombre"
+    document.getElementById("phoneLabel").innerHTML="Teléfono"
+    document.getElementById("phone").placeholder="Teléfono"
+    document.getElementById("emailLabel").innerHTML="Email"
+    document.getElementById("email").placeholder="Email"
+    document.getElementById("messageLabel").innerHTML="Mensaje"
+    document.getElementById("message").placeholder="Mensaje"
+    document.getElementById("btn").value="Enviar"
+
     // Derechos de autor
     document.querySelector(".derechos").innerHTML = " &copy; 2025 Luis Henao Campuslands. Todos los derechos reservados.";
 }
@@ -128,6 +141,18 @@ function changeEnglish() {
     <br><br>
     🚀 My goal is to keep growing as a developer, contribute to innovative projects, and collaborate with dynamic teams where I can improve my skills and share my knowledge.`
 
+    //Contacto
+    document.getElementById("descargaCv").innerHTML = "Download CV";
+    document.getElementById("nameLabel").innerHTML = "Name";
+    document.getElementById("name").placeholder = "Name";
+    document.getElementById("phoneLabel").innerHTML = "Phone";
+    document.getElementById("phone").placeholder = "Phone";
+    document.getElementById("emailLabel").innerHTML = "Email";
+    document.getElementById("email").placeholder = "Email";
+    document.getElementById("messageLabel").innerHTML = "Message";
+    document.getElementById("message").placeholder = "Message";
+    document.getElementById("btn").value = "Send";
+
     //derechos de autor
     document.querySelector(".derechos").innerHTML=" &copy; 2025 Luis Henao Campuslands. All rights reserved."
 
@@ -171,6 +196,20 @@ function changeFrench() {
     👨‍💻 Je me distingue par mon organisation, ma capacité à résoudre des problèmes et mon travail en équipe. J'aime apprendre de nouvelles technologies et me tenir à jour avec les tendances du développement.
     <br><br>
     🚀 Mon objectif est de continuer à évoluer en tant que développeur, d'apporter de la valeur à des projets innovants et de collaborer avec des équipes dynamiques où je peux améliorer mes compétences et partager mes connaissances.`;
+
+    //Contacto
+    
+    document.getElementById("descargaCv").innerHTML = "Télécharger le CV";
+    document.getElementById("nameLabel").innerHTML = "Nom";
+    document.getElementById("name").placeholder = "Nom";
+    document.getElementById("phoneLabel").innerHTML = "Téléphone";
+    document.getElementById("phone").placeholder = "Téléphone";
+    document.getElementById("emailLabel").innerHTML = "Email";
+    document.getElementById("email").placeholder = "Email";
+    document.getElementById("messageLabel").innerHTML = "Message";
+    document.getElementById("message").placeholder = "Message";
+    document.getElementById("btn").value = "Envoyer";
+
 
     //derechos de autor
     document.querySelector(".derechos").innerHTML = " &copy; 2025 Luis Henao Campuslands. Tous droits réservés.";
