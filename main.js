@@ -87,6 +87,7 @@ function changeSpanish() {
     //contacto
 
     document.getElementById("descargaCv").innerHTML="Descargar CV"
+    document.getElementById("contactoH2").innerHTML = "Contacto";
     document.getElementById("nameLabel").innerHTML="Nombre"
     document.getElementById("name").placeholder="Nombre"
     document.getElementById("phoneLabel").innerHTML="Teléfono"
@@ -143,6 +144,7 @@ function changeEnglish() {
 
     //Contacto
     document.getElementById("descargaCv").innerHTML = "Download CV";
+    document.getElementById("contactoH2").innerHTML = "Contact";
     document.getElementById("nameLabel").innerHTML = "Name";
     document.getElementById("name").placeholder = "Name";
     document.getElementById("phoneLabel").innerHTML = "Phone";
@@ -200,6 +202,7 @@ function changeFrench() {
     //Contacto
     
     document.getElementById("descargaCv").innerHTML = "Télécharger le CV";
+    document.getElementById("contactoH2").innerHTML = "Contact";
     document.getElementById("nameLabel").innerHTML = "Nom";
     document.getElementById("name").placeholder = "Nom";
     document.getElementById("phoneLabel").innerHTML = "Téléphone";
