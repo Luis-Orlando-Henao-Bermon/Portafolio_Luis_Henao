@@ -365,7 +365,7 @@ form{
   flex-direction: column;
   align-items: center;
   background-color: var(--color-back);
-  width: clamp(310px,50vw,800px);
+  width: clamp(310px,50vw,400px);
   margin: auto;
   border: #575757 1px solid;
   border-radius: 1rem;
