@@ -273,6 +273,7 @@ header a{
   gap: 1rem; 
   width: 100vw;
 }
+
 .card1{
   transition: 0.2s;
   width: clamp(18rem, 40vw, 48rem);
@@ -281,7 +282,7 @@ header a{
 .card1 img:hover{
   padding: 0rem;
   transform: scale(1.05);
-  filter: drop-shadow(0px 0px 30px #5D3FD3); 
+  filter: drop-shadow(0px 0px 30px #808080); 
 }
 a svg{
   transition: 0.2s ease-in-out;
@@ -293,8 +294,11 @@ a svg:hover{
 .card1 img{
   width: 100%;
   margin-right: -6%;
-  filter: drop-shadow(0px 0px 10px #5D3FD3); 
+  filter: drop-shadow(0px 0px 10px #808080); 
   transition: 0.2s ease-in-out;
+}
+#happy{
+  width: 98%;
 }
 .nombreProyecto {
   margin: 1rem 0;
@@ -304,6 +308,7 @@ a svg:hover{
 .infoProyecto {
   line-height: 1;
   text-align:center;
+  margin-top: 1rem;
 }
 #linksCards{
   color: transparent;
@@ -366,7 +371,6 @@ form{
   align-items: center;
   background-color: var(--color-back);
   width: clamp(310px,50vw,400px);
-  margin: auto;
   border: #575757 1px solid;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -403,12 +407,48 @@ form{
   color: var(--color-back);
 }
 
-@media only screen and (max-width:610px){
-  .infoMe{
-    width: 80%;
-  }
+.lenguajes {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
-@media only screen and (max-width:580px){
+.lenguajes p{
+  background-color: var(--color-text) ;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  color: var(--color-back)  ;
+}
+.Habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  border-radius: 2rem;
+}
+.HabilidadesText {
+  font-size: clamp(1.5rem,3.5vw,3rem);
+  margin: 3rem 0;
+  font-family: bebans;
+}
+.habilidadesCaja p{
+  background-color: var(--color-text) ;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  color: var(--color-back)  ;
+  font-size: clamp(0.8rem,1.5vw,1.3rem);
+}
+.habilidadesCaja {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width:900px){
   .izquierda{
     display: none;
   }
@@ -417,5 +457,13 @@ form{
   }
   .menuH{
     right: 1rem;
+  }
+}
+@media only screen and (max-width:610px){
+  .infoMe{
+    width: 80%;
+  }
+  .Habilidades{
+    width: 80%;
   }
 }
