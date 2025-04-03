@@ -10,6 +10,9 @@ document.getElementById("sobreMiM").addEventListener("click", function() {
 document.getElementById("contactoL").addEventListener("click", function() {
     document.getElementById("menuHambur").style.right="-10rem";
 });
+document.getElementById("habilidadesAM").addEventListener("click", function() {
+    document.getElementById("menuHambur").style.right="-10rem";
+});
 document.getElementById("menuH").addEventListener("click", function() {
     document.getElementById("menuHambur").style.right="-10rem";
 });
